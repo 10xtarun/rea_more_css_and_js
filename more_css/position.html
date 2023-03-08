@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>More CSS!</title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            align-items: center;
+        }
+
+        body { 
+            height: 150vh;
+        }
+
+        h1 {
+            margin: 1rem auto;
+            text-align: center;
+        }
+
+        hr {
+            width: 80%;
+            margin: 0.1rem auto 1rem;
+        }
+
+        div {
+            margin: 0.2rem auto;
+            height: 50px;
+            width: 80%;
+            border: 1px solid black;
+            text-align: center;
+        }
+
+        .static {
+            top: 50vh;
+            /* right: 900px; */
+            position: static;
+        }
+
+        .relative {
+            /* top: 300px;
+            right: 400px; */
+            position: relative;
+        }
+
+        /* .fixed {
+            position: fixed;
+            bottom: 0;
+            width: 80%;
+        } */
+
+        .absolute {
+            position: absolute;
+            top: 300px;
+            left: 200px;
+        }
+
+        .sticky {
+            position: sticky;
+            top: 2rem;
+        }
+
+    </style>
+   
+</head>
+
+<body>
+    <h1>Position in CSS</h1>
+    <hr />
+
+    <div class="static">Static</div>
+    <div class="relative">Relative</div>
+    <div class="fixed">Fixed</div>
+    <div class="absolute">Absolute</div>
+    <div class="sticky">Sticky</div>
+    
+</body>
+
+</html>
